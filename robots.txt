@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://topogigio.fr/sitemap.xml
