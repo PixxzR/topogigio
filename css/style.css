@@ -138,6 +138,22 @@ img { max-width: 100%; display: block; }
 .nav-cta { background: var(--color-primary); color: #fff !important; font-weight: 600; }
 .nav-cta:hover { background: var(--color-primary-light) !important; }
 
+/* Language switcher */
+.nav-lang-item { display: flex; align-items: center; }
+.lang-switch {
+  display: inline-flex; gap: 2px; padding: 3px;
+  background: rgba(255, 255, 255, 0.06); border: 1px solid var(--color-border);
+  border-radius: 50px;
+}
+.lang-opt {
+  background: transparent; border: none; cursor: pointer;
+  font-family: var(--font-body); font-size: 0.74rem; font-weight: 700; letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.65); padding: 0.28rem 0.5rem; border-radius: 50px;
+  transition: all 0.2s ease;
+}
+.lang-opt:hover:not(.active) { color: #fff; }
+.lang-opt.active { background: var(--color-primary); color: #fff; }
+
 .nav-toggle {
   display: none; flex-direction: column; gap: 5px;
   background: none; border: none; cursor: pointer; padding: 6px;
@@ -270,6 +286,29 @@ a.info-chip:hover { opacity: 0.8; }
 }
 .menu-tab:hover { color: var(--color-text); border-color: var(--color-text-dim); }
 .menu-tab.active { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
+
+/* Nouveautés strip */
+.new-strip {
+  display: flex; align-items: center; gap: 0.7rem 1rem; flex-wrap: wrap; justify-content: center;
+  max-width: 860px; margin: -0.5rem auto 2.4rem; padding: 0.7rem 1.1rem;
+  background: linear-gradient(135deg, rgba(31,157,85,0.08), rgba(225,29,42,0.06));
+  border: 1px solid rgba(31,157,85,0.22); border-radius: var(--radius);
+}
+.new-strip-label {
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--color-green-light); white-space: nowrap;
+}
+.new-chips { display: flex; gap: 0.45rem; flex-wrap: wrap; justify-content: center; }
+.new-chip {
+  background: var(--color-bg-card); border: 1px solid var(--color-border); color: var(--color-text);
+  font-family: var(--font-body); font-size: 0.82rem; font-weight: 600;
+  padding: 0.35rem 0.85rem; border-radius: 50px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 0.4rem; transition: all 0.2s ease;
+}
+.new-chip::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--color-primary); flex-shrink: 0; }
+.new-chip:hover { border-color: var(--color-green); color: #fff; transform: translateY(-1px); }
+
+.barq-emoji { font-size: 1.7rem; line-height: 1; margin-bottom: 0.35rem; }
 
 .menu-panel { display: none; }
 .menu-panel.active { display: block; animation: fadeIn 0.35s ease; }
@@ -482,6 +521,8 @@ a.info-chip:hover { opacity: 0.8; }
     margin-top: 1.4rem; text-align: center; padding: 1rem; font-size: 1.05rem;
     border-radius: 50px; border-bottom: none;
   }
+  .nav-lang-item { margin-top: 1.3rem; justify-content: center; }
+  .lang-opt { font-size: 0.85rem; padding: 0.4rem 0.7rem; }
 
   .hero-tagline { font-size: 1rem; }
   .hero-tagline br { display: none; }

@@ -32,6 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
   navMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
 
+  // Force-reveal every animated item inside a container (so tab content is
+  // never stuck invisible from the scroll-reveal animation).
+  const revealIn = (container) => {
+    if (!container) return;
+    container.querySelectorAll('.menu-item, .formule-card, .barquette-card').forEach(el => {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+    });
+  };
+
   // --- Menu tabs ---
   const tabs = document.querySelectorAll('.menu-tab');
   const panels = document.querySelectorAll('.menu-panel');
@@ -42,11 +52,24 @@ document.addEventListener('DOMContentLoaded', () => {
       panels.forEach(p => p.classList.remove('active'));
       tab.classList.add('active');
       const panel = document.getElementById(`tab-${target}`);
-      if (panel) panel.classList.add('active');
+      if (panel) { panel.classList.add('active'); revealIn(panel); }
       // keep the active tab in view on mobile
       tab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
     });
   });
+
+  // --- "Nouveautés" chips -> jump to the right tab ---
+  const newStrip = document.getElementById('newStrip');
+  if (newStrip) {
+    newStrip.addEventListener('click', (e) => {
+      const chip = e.target.closest('[data-goto]');
+      if (!chip) return;
+      const targetTab = document.querySelector(`.menu-tab[data-tab="${chip.dataset.goto}"]`);
+      if (targetTab) targetTab.click();
+      const tabsBar = document.getElementById('menuTabs');
+      if (tabsBar) tabsBar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
 
   // --- Pizza sub-tabs (base tomate / crème) ---
   const subtabs = document.querySelectorAll('.subtab');
@@ -58,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
       subpanels.forEach(p => p.classList.remove('active'));
       sub.classList.add('active');
       const panel = document.getElementById(`sub-${target}`);
-      if (panel) panel.classList.add('active');
+      if (panel) { panel.classList.add('active'); revealIn(panel); }
     });
   });
 
