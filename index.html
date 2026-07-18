@@ -78,8 +78,14 @@
       { "@type": "AdministrativeArea", "name": "Charente-Maritime" }
     ],
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Thursday","Friday"], "opens": "11:00", "closes": "14:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "17:00", "closes": "21:30" }
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "11:00", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "17:00", "closes": "21:30" }
+    ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "248", "bestRating": "5", "worstRating": "1" },
+    "review": [
+      { "@type": "Review", "author": { "@type": "Person", "name": "Océane Bouquet" }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Meilleur kebab que j'ai mangé du coin ! Personnel agréable, je recommande." },
+      { "@type": "Review", "author": { "@type": "Person", "name": "Christophe C." }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Fast food qui a du goût ! Viande très bonne, un pain excellent, pizzas bien fournies. Service impeccable." },
+      { "@type": "Review", "author": { "@type": "Person", "name": "Jean-Christophe Neveu" }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Sandwich et kebab délicieux et copieux, prix raisonnables. Patron et personnel souriants, au top. Je recommande vivement." }
     ]
   }
   </script>
@@ -204,7 +210,7 @@
       <div class="new-strip" id="newStrip">
         <span class="new-strip-label" data-i18n="new_label">✨ Nouveautés</span>
         <div class="new-chips">
-          <button type="button" class="new-chip" data-goto="sandwichs">Tasty Crousty</button>
+          <button type="button" class="new-chip" data-goto="barquettes">Tasty Crousty</button>
           <button type="button" class="new-chip" data-goto="sandwichs">Royal Sandwich</button>
           <button type="button" class="new-chip" data-goto="sandwichs">Duo Gourmand</button>
           <button type="button" class="new-chip" data-goto="sandwichs">Poulet Crispy</button>
@@ -553,13 +559,6 @@
             <p class="menu-item-desc" data-i18n="d_royal">Merguez + steak haché + poulet croustillant + œuf + raclette + sauce</p>
             <p class="menu-item-note" data-i18n="n_royal">+ Frites 15€ &nbsp;·&nbsp; + Boisson 16,5€</p>
           </div>
-          <div class="menu-item pizza-star">
-            <div class="star-badge" data-i18n="tag_new">Nouveau</div>
-            <div class="menu-item-header"><h3 class="menu-item-name">Tasty Crousty</h3>
-              <div class="menu-item-prices"><span class="price">8,5€</span></div></div>
-            <p class="menu-item-desc" data-i18n="d_crousty">Riz fondant + poulet frit croustillant et sauce (la barquette)</p>
-            <p class="menu-item-note" data-i18n="n_crousty">+ Boisson 10€</p>
-          </div>
         </div>
       </div>
 
@@ -644,6 +643,15 @@
       <!-- ============ SNACKS & FRITES (Barquettes) ============ -->
       <div class="menu-panel" id="tab-barquettes" role="tabpanel">
         <div class="menu-note"><p data-i18n="barq_note">Nuggets, tenders, ailes de poulet, kebab et frites &mdash; en barquette, à picorer&nbsp;!</p></div>
+        <div class="menu-list menu-list-wide crousty-feature">
+          <div class="menu-item pizza-star">
+            <div class="star-badge" data-i18n="tag_new">Nouveau</div>
+            <div class="menu-item-header"><h3 class="menu-item-name">Tasty Crousty</h3>
+              <div class="menu-item-prices"><span class="price">8,5€</span></div></div>
+            <p class="menu-item-desc" data-i18n="d_crousty">Riz fondant + poulet frit croustillant et sauce (la barquette)</p>
+            <p class="menu-item-note" data-i18n="n_crousty">+ Boisson 10€</p>
+          </div>
+        </div>
         <div class="barquettes-grid">
           <div class="barquette-card">
             <div class="barq-emoji">🍗</div>
@@ -772,11 +780,11 @@
     <div class="container">
       <p class="eyebrow eyebrow-center" data-i18n="hor_eyebrow">Ouvert 6j/7</p>
       <h2 class="section-title section-title-center" data-i18n="hor_title">Horaires d'ouverture</h2>
-      <p class="section-subtitle" data-i18n="hor_subtitle">Fermé le mardi, ainsi que les samedis &amp; dimanches midi</p>
+      <p class="section-subtitle" data-i18n="hor_subtitle">Fermé le lundi, ainsi que les samedis &amp; dimanches midi</p>
       <div class="horaires-card">
         <div class="horaires-grid">
-          <div class="horaire-row"><span class="horaire-day" data-i18n="day_lun">Lundi</span><span class="horaire-time">11h-14h <span class="horaire-sep">&amp;</span> 17h-21h30</span></div>
-          <div class="horaire-row closed"><span class="horaire-day" data-i18n="day_mar">Mardi</span><span class="horaire-time" data-i18n="closed">Fermé</span></div>
+          <div class="horaire-row closed"><span class="horaire-day" data-i18n="day_lun">Lundi</span><span class="horaire-time" data-i18n="closed">Fermé</span></div>
+          <div class="horaire-row"><span class="horaire-day" data-i18n="day_mar">Mardi</span><span class="horaire-time">11h-14h <span class="horaire-sep">&amp;</span> 17h-21h30</span></div>
           <div class="horaire-row"><span class="horaire-day" data-i18n="day_mer">Mercredi</span><span class="horaire-time">11h-14h <span class="horaire-sep">&amp;</span> 17h-21h30</span></div>
           <div class="horaire-row"><span class="horaire-day" data-i18n="day_jeu">Jeudi</span><span class="horaire-time">11h-14h <span class="horaire-sep">&amp;</span> 17h-21h30</span></div>
           <div class="horaire-row"><span class="horaire-day" data-i18n="day_ven">Vendredi</span><span class="horaire-time">11h-14h <span class="horaire-sep">&amp;</span> 17h-21h30</span></div>
@@ -806,6 +814,63 @@
     </div>
   </section>
 
+  <!-- Avis Google -->
+  <section class="section reviews-section" id="avis">
+    <div class="container">
+      <p class="eyebrow eyebrow-center" data-i18n="rev_eyebrow">Avis clients</p>
+      <h2 class="section-title section-title-center" data-i18n="rev_title">Ils adorent Topo Gigio</h2>
+      <div class="reviews-rating">
+        <a href="https://www.google.com/maps?cid=13958942453612972205" target="_blank" rel="noopener" class="rating-badge" aria-label="Note Google 4,4 sur 5">
+          <span class="rating-stars" aria-hidden="true">★★★★★</span>
+          <span class="rating-num">4,4/5</span>
+          <span class="rating-count" data-i18n="rev_count">248 avis Google</span>
+        </a>
+      </div>
+      <div class="reviews-grid">
+
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote class="review-text">« Meilleur kebab que j'ai mangé du coin&nbsp;!!! Personnel agréable, je recommande. »</blockquote>
+          <figcaption class="review-author"><span class="review-avatar">O</span><span><span class="review-name">Océane Bouquet</span><span class="review-src" data-i18n="rev_src">Avis Google</span></span></figcaption>
+        </figure>
+
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote class="review-text">« Fast food qui a du goût&nbsp;! Kebabs et pizzas Reine&nbsp;: viande très bonne, un pain excellent. Pizzas bien fournies, ingrédients de qualité et une pâte très bonne. Service impeccable. »</blockquote>
+          <figcaption class="review-author"><span class="review-avatar">C</span><span><span class="review-name">Christophe C.</span><span class="review-src">Local Guide · Google</span></span></figcaption>
+        </figure>
+
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote class="review-text">« Je ne suis jamais déçu. Accueil super et toujours agréable. Tout est très très bon, surtout le spécial Sam… une tuerie. Merci d'être dans le coin&nbsp;! »</blockquote>
+          <figcaption class="review-author"><span class="review-avatar">P</span><span><span class="review-name">Pouette P.</span><span class="review-src">Local Guide · Google</span></span></figcaption>
+        </figure>
+
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote class="review-text">« Le sandwich et le kebab sont délicieux et copieux, les prix restent raisonnables. Patron et personnel souriants, au top&nbsp;! Je recommande vivement. »</blockquote>
+          <figcaption class="review-author"><span class="review-avatar">J</span><span><span class="review-name">Jean-Christophe Neveu</span><span class="review-src" data-i18n="rev_src">Avis Google</span></span></figcaption>
+        </figure>
+
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote class="review-text">« De passage à Gémozac&nbsp;: kebab excellent avec le pain cuit maison. Le boss des lieux est très sympathique aussi. »</blockquote>
+          <figcaption class="review-author"><span class="review-avatar">A</span><span><span class="review-name">Abnere Kevin</span><span class="review-src" data-i18n="rev_src">Avis Google</span></span></figcaption>
+        </figure>
+
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote class="review-text">« Commandes rapidement exécutées, avec le sourire et la bienveillance de la souris «&nbsp;Topo Gigio&nbsp;»… toute la gentillesse de l'Italie. »</blockquote>
+          <figcaption class="review-author"><span class="review-avatar">R</span><span><span class="review-name">Raphaël Cherbonneau</span><span class="review-src">Local Guide · Google</span></span></figcaption>
+        </figure>
+
+      </div>
+      <div class="reviews-cta">
+        <a href="https://www.google.com/maps?cid=13958942453612972205" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="rev_all">Voir tous les avis sur Google</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact -->
   <section class="section contact-section" id="contact">
     <div class="container">
@@ -831,7 +896,7 @@
         <div class="contact-card contact-card-static">
           <div class="contact-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <h3 data-i18n="nav_horaires">Horaires</h3>
-          <p>11h-14h &amp; 17h-21h30<br><span data-i18n="c_hours_closed">Fermé mardi &amp; week-end midi</span></p>
+          <p>11h-14h &amp; 17h-21h30<br><span data-i18n="c_hours_closed">Fermé lundi &amp; week-end midi</span></p>
         </div>
       </div>
 

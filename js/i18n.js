@@ -20,7 +20,7 @@
       about_f1: "Pizzas 25 &amp; 33 cm", about_f2: "Takeaway", about_f3: "Open 6 days a week",
       about_card_title: "At a glance",
       about_l_cmd: "📞 Order", about_l_addr: "📍 Address", about_l_midi: "🕐 Lunch", about_l_soir: "🌙 Evening",
-      about_l_ferme: "🚫 Closed", about_v_ferme: "Tue + Sat &amp; Sun lunch", about_l_pay: "💳 Payment", about_v_pay: "Card, contactless, meal-voucher card",
+      about_l_ferme: "🚫 Closed", about_v_ferme: "Mon + Sat &amp; Sun lunch", about_l_pay: "💳 Payment", about_v_pay: "Card, contactless, meal-voucher card",
       about_cta: "Call to order",
       // Menu
       menu_eyebrow: "Our Menu", menu_title: "The Topo Gigio Menu",
@@ -112,9 +112,10 @@
       // Sauces
       sauces_title: "Our Sauces <span class=\"item-sub\">the pot €0.20</span>",
       order_cta: "Ready to order?", new_label: "✨ What's New",
+      rev_eyebrow: "Customer reviews", rev_title: "They love Topo Gigio", rev_count: "248 Google reviews", rev_all: "See all reviews on Google", rev_src: "Google review",
       // Hours
       hor_eyebrow: "Open 6 days a week", hor_title: "Opening Hours",
-      hor_subtitle: "Closed on Tuesdays, as well as Saturday &amp; Sunday lunchtimes",
+      hor_subtitle: "Closed on Mondays, as well as Saturday &amp; Sunday lunchtimes",
       day_lun: "Monday", day_mar: "Tuesday", day_mer: "Wednesday", day_jeu: "Thursday", day_ven: "Friday", day_sam: "Saturday", day_dim: "Sunday",
       closed: "Closed", midi_ferme: "(lunch closed)",
       // Localisation
@@ -122,7 +123,7 @@
       // Contact
       contact_eyebrow: "Contact", contact_title: "Order takeaway",
       contact_subtitle: "Order by phone, we prepare it, you pick it up.",
-      c_phone: "Phone", c_addr: "Address", c_hours_closed: "Closed Tue &amp; weekend lunch",
+      c_phone: "Phone", c_addr: "Address", c_hours_closed: "Closed Mon &amp; weekend lunch",
       pay_title: "Accepted payment methods", pay_cash: "Cash", pay_contactless: "Contactless", pay_debit: "Debit card", pay_trcard: "Meal-voucher card",
       footer_rights: "Takeaway in Gémozac. All rights reserved."
     },
@@ -138,7 +139,7 @@
       about_f1: "Pizzas 25 y 33 cm", about_f2: "Para llevar", about_f3: "Abierto 6 días/semana",
       about_card_title: "De un vistazo",
       about_l_cmd: "📞 Pedidos", about_l_addr: "📍 Dirección", about_l_midi: "🕐 Mediodía", about_l_soir: "🌙 Noche",
-      about_l_ferme: "🚫 Cerrado", about_v_ferme: "Mar + sáb. y dom. mediodía", about_l_pay: "💳 Pago", about_v_pay: "Tarjeta, contactless, tarjeta ticket restaurante",
+      about_l_ferme: "🚫 Cerrado", about_v_ferme: "Lun + sáb. y dom. mediodía", about_l_pay: "💳 Pago", about_v_pay: "Tarjeta, contactless, tarjeta ticket restaurante",
       about_cta: "Llamar para pedir",
       menu_eyebrow: "Nuestra Carta", menu_title: "La Carta Topo Gigio",
       menu_subtitle: "Todo para llevar. Suplementos y salsas al final de la página.",
@@ -216,14 +217,15 @@
       enf_note: "A elegir: Hamburguesa + patatas · Nuggets + patatas · Carne kebab + patatas · Tacos de pollo + patatas",
       sauces_title: "Nuestras Salsas <span class=\"item-sub\">el bote 0,20€</span>",
       order_cta: "¿Listo para pedir?", new_label: "✨ Novedades",
+      rev_eyebrow: "Opiniones", rev_title: "Les encanta Topo Gigio", rev_count: "248 reseñas de Google", rev_all: "Ver todas las opiniones en Google", rev_src: "Reseña de Google",
       hor_eyebrow: "Abierto 6 días/semana", hor_title: "Horario de apertura",
-      hor_subtitle: "Cerrado los martes, y sábados y domingos al mediodía",
+      hor_subtitle: "Cerrado los lunes, y sábados y domingos al mediodía",
       day_lun: "Lunes", day_mar: "Martes", day_mer: "Miércoles", day_jeu: "Jueves", day_ven: "Viernes", day_sam: "Sábado", day_dim: "Domingo",
       closed: "Cerrado", midi_ferme: "(mediodía cerrado)",
       loc_subtitle: "17260 Gémozac, para llevar", loc_btn1: "Cómo llegar", loc_btn2: "Llamar",
       contact_eyebrow: "Contacto", contact_title: "Pide para llevar",
       contact_subtitle: "Pide por teléfono, lo preparamos, lo recoges.",
-      c_phone: "Teléfono", c_addr: "Dirección", c_hours_closed: "Cerrado mar. y fin de semana mediodía",
+      c_phone: "Teléfono", c_addr: "Dirección", c_hours_closed: "Cerrado lun. y fin de semana mediodía",
       pay_title: "Métodos de pago aceptados", pay_cash: "Efectivo", pay_contactless: "Contactless", pay_debit: "Tarjeta de débito", pay_trcard: "Tarjeta ticket restaurante",
       footer_rights: "Para llevar en Gémozac. Todos los derechos reservados."
     },
@@ -239,7 +241,7 @@
       about_f1: "Pizzen 25 &amp; 33 cm", about_f2: "Zum Mitnehmen", about_f3: "6 Tage/Woche geöffnet",
       about_card_title: "Auf einen Blick",
       about_l_cmd: "📞 Bestellung", about_l_addr: "📍 Adresse", about_l_midi: "🕐 Mittag", about_l_soir: "🌙 Abend",
-      about_l_ferme: "🚫 Geschlossen", about_v_ferme: "Di + Sa & So mittags", about_l_pay: "💳 Zahlung", about_v_pay: "Karte, kontaktlos, Essensgutschein-Karte",
+      about_l_ferme: "🚫 Geschlossen", about_v_ferme: "Mo + Sa & So mittags", about_l_pay: "💳 Zahlung", about_v_pay: "Karte, kontaktlos, Essensgutschein-Karte",
       about_cta: "Zum Bestellen anrufen",
       menu_eyebrow: "Unsere Karte", menu_title: "Die Topo-Gigio-Karte",
       menu_subtitle: "Alles zum Mitnehmen. Extras und Saucen am Seitenende.",
@@ -317,14 +319,15 @@
       enf_note: "Zur Wahl: Burger + Pommes · Nuggets + Pommes · Kebabfleisch + Pommes · Hähnchen-Tacos + Pommes",
       sauces_title: "Unsere Saucen <span class=\"item-sub\">der Becher 0,20€</span>",
       order_cta: "Bereit zu bestellen?", new_label: "✨ Neu",
+      rev_eyebrow: "Kundenbewertungen", rev_title: "Sie lieben Topo Gigio", rev_count: "248 Google-Bewertungen", rev_all: "Alle Bewertungen auf Google ansehen", rev_src: "Google-Bewertung",
       hor_eyebrow: "6 Tage/Woche geöffnet", hor_title: "Öffnungszeiten",
-      hor_subtitle: "Dienstags geschlossen, sowie Samstag- &amp; Sonntagmittag",
+      hor_subtitle: "Montags geschlossen, sowie Samstag- &amp; Sonntagmittag",
       day_lun: "Montag", day_mar: "Dienstag", day_mer: "Mittwoch", day_jeu: "Donnerstag", day_ven: "Freitag", day_sam: "Samstag", day_dim: "Sonntag",
       closed: "Geschlossen", midi_ferme: "(mittags geschlossen)",
       loc_subtitle: "17260 Gémozac, zum Mitnehmen", loc_btn1: "Route", loc_btn2: "Anrufen",
       contact_eyebrow: "Kontakt", contact_title: "Zum Mitnehmen bestellen",
       contact_subtitle: "Telefonisch bestellen, wir bereiten es zu, Sie holen es ab.",
-      c_phone: "Telefon", c_addr: "Adresse", c_hours_closed: "Di & Wochenende mittags geschlossen",
+      c_phone: "Telefon", c_addr: "Adresse", c_hours_closed: "Mo & Wochenende mittags geschlossen",
       pay_title: "Akzeptierte Zahlungsmittel", pay_cash: "Bargeld", pay_contactless: "Kontaktlos", pay_debit: "EC-Karte", pay_trcard: "Essensgutschein-Karte",
       footer_rights: "Zum Mitnehmen in Gémozac. Alle Rechte vorbehalten."
     }
