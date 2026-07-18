@@ -20,7 +20,7 @@
       about_f1: "Pizzas 25 &amp; 33 cm", about_f2: "Takeaway", about_f3: "Open 6 days a week",
       about_card_title: "At a glance",
       about_l_cmd: "📞 Order", about_l_addr: "📍 Address", about_l_midi: "🕐 Lunch", about_l_soir: "🌙 Evening",
-      about_l_ferme: "🚫 Closed", about_v_ferme: "Tue + Sat &amp; Sun lunch", about_l_pay: "💳 Payment", about_v_pay: "Card, contactless, meal vouchers",
+      about_l_ferme: "🚫 Closed", about_v_ferme: "Tue + Sat &amp; Sun lunch", about_l_pay: "💳 Payment", about_v_pay: "Card, contactless, meal-voucher card",
       about_cta: "Call to order",
       // Menu
       menu_eyebrow: "Our Menu", menu_title: "The Topo Gigio Menu",
@@ -123,7 +123,7 @@
       contact_eyebrow: "Contact", contact_title: "Order takeaway",
       contact_subtitle: "Order by phone, we prepare it, you pick it up.",
       c_phone: "Phone", c_addr: "Address", c_hours_closed: "Closed Tue &amp; weekend lunch",
-      pay_title: "Accepted payment methods", pay_cash: "Cash", pay_contactless: "Contactless", pay_debit: "Debit card",
+      pay_title: "Accepted payment methods", pay_cash: "Cash", pay_contactless: "Contactless", pay_debit: "Debit card", pay_trcard: "Meal-voucher card",
       footer_rights: "Takeaway in Gémozac. All rights reserved."
     },
 
@@ -138,7 +138,7 @@
       about_f1: "Pizzas 25 y 33 cm", about_f2: "Para llevar", about_f3: "Abierto 6 días/semana",
       about_card_title: "De un vistazo",
       about_l_cmd: "📞 Pedidos", about_l_addr: "📍 Dirección", about_l_midi: "🕐 Mediodía", about_l_soir: "🌙 Noche",
-      about_l_ferme: "🚫 Cerrado", about_v_ferme: "Mar + sáb. y dom. mediodía", about_l_pay: "💳 Pago", about_v_pay: "Tarjeta, contactless, ticket restaurante",
+      about_l_ferme: "🚫 Cerrado", about_v_ferme: "Mar + sáb. y dom. mediodía", about_l_pay: "💳 Pago", about_v_pay: "Tarjeta, contactless, tarjeta ticket restaurante",
       about_cta: "Llamar para pedir",
       menu_eyebrow: "Nuestra Carta", menu_title: "La Carta Topo Gigio",
       menu_subtitle: "Todo para llevar. Suplementos y salsas al final de la página.",
@@ -224,7 +224,7 @@
       contact_eyebrow: "Contacto", contact_title: "Pide para llevar",
       contact_subtitle: "Pide por teléfono, lo preparamos, lo recoges.",
       c_phone: "Teléfono", c_addr: "Dirección", c_hours_closed: "Cerrado mar. y fin de semana mediodía",
-      pay_title: "Métodos de pago aceptados", pay_cash: "Efectivo", pay_contactless: "Contactless", pay_debit: "Tarjeta de débito",
+      pay_title: "Métodos de pago aceptados", pay_cash: "Efectivo", pay_contactless: "Contactless", pay_debit: "Tarjeta de débito", pay_trcard: "Tarjeta ticket restaurante",
       footer_rights: "Para llevar en Gémozac. Todos los derechos reservados."
     },
 
@@ -239,7 +239,7 @@
       about_f1: "Pizzen 25 &amp; 33 cm", about_f2: "Zum Mitnehmen", about_f3: "6 Tage/Woche geöffnet",
       about_card_title: "Auf einen Blick",
       about_l_cmd: "📞 Bestellung", about_l_addr: "📍 Adresse", about_l_midi: "🕐 Mittag", about_l_soir: "🌙 Abend",
-      about_l_ferme: "🚫 Geschlossen", about_v_ferme: "Di + Sa & So mittags", about_l_pay: "💳 Zahlung", about_v_pay: "Karte, kontaktlos, Essensgutscheine",
+      about_l_ferme: "🚫 Geschlossen", about_v_ferme: "Di + Sa & So mittags", about_l_pay: "💳 Zahlung", about_v_pay: "Karte, kontaktlos, Essensgutschein-Karte",
       about_cta: "Zum Bestellen anrufen",
       menu_eyebrow: "Unsere Karte", menu_title: "Die Topo-Gigio-Karte",
       menu_subtitle: "Alles zum Mitnehmen. Extras und Saucen am Seitenende.",
@@ -325,7 +325,7 @@
       contact_eyebrow: "Kontakt", contact_title: "Zum Mitnehmen bestellen",
       contact_subtitle: "Telefonisch bestellen, wir bereiten es zu, Sie holen es ab.",
       c_phone: "Telefon", c_addr: "Adresse", c_hours_closed: "Di & Wochenende mittags geschlossen",
-      pay_title: "Akzeptierte Zahlungsmittel", pay_cash: "Bargeld", pay_contactless: "Kontaktlos", pay_debit: "EC-Karte",
+      pay_title: "Akzeptierte Zahlungsmittel", pay_cash: "Bargeld", pay_contactless: "Kontaktlos", pay_debit: "EC-Karte", pay_trcard: "Essensgutschein-Karte",
       footer_rights: "Zum Mitnehmen in Gémozac. Alle Rechte vorbehalten."
     }
   };
