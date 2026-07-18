@@ -17,18 +17,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Mobile menu toggle ---
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
-  navToggle.addEventListener('click', () => {
-    const open = navToggle.classList.toggle('active');
+  const navBackdrop = document.getElementById('navBackdrop');
+
+  const setMenu = (open) => {
+    navToggle.classList.toggle('active', open);
     navMenu.classList.toggle('active', open);
+    if (navBackdrop) navBackdrop.classList.toggle('active', open);
+    document.body.classList.toggle('menu-open', open);
     navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-  navMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navToggle.classList.remove('active');
-      navMenu.classList.remove('active');
-      navToggle.setAttribute('aria-expanded', 'false');
-    });
-  });
+  };
+
+  navToggle.addEventListener('click', () => setMenu(!navMenu.classList.contains('active')));
+  if (navBackdrop) navBackdrop.addEventListener('click', () => setMenu(false));
+  navMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
 
   // --- Menu tabs ---
   const tabs = document.querySelectorAll('.menu-tab');
