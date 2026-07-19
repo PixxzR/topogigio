@@ -58,26 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- Easter egg "23,5 cm" : déplie le mètre ruban ---
-  const eggTrigger = document.getElementById('eggTrigger');
-  const rulerEgg = document.getElementById('rulerEgg');
-  if (eggTrigger && rulerEgg) {
-    eggTrigger.addEventListener('click', () => {
-      const open = rulerEgg.hasAttribute('hidden');
-      if (open) {
-        rulerEgg.removeAttribute('hidden');
-        // relance l'animation à chaque ouverture
-        rulerEgg.classList.remove('open');
-        void rulerEgg.offsetWidth;
-        rulerEgg.classList.add('open');
-      } else {
-        rulerEgg.setAttribute('hidden', '');
-        rulerEgg.classList.remove('open');
-      }
-      eggTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  }
-
   // --- "Nouveautés" chips -> jump to the right tab ---
   const newStrip = document.getElementById('newStrip');
   if (newStrip) {
