@@ -241,6 +241,20 @@
           <p data-i18n="pizza_note">Toutes nos pizzas en <strong>25 cm</strong> ou <strong>33 cm</strong>. Choisissez la base ci-dessous</p>
         </div>
 
+        <!-- Easter egg : la légende des 23,5 cm -->
+        <div class="egg-wrap">
+          <button type="button" class="egg-trigger" id="eggTrigger" aria-expanded="false" aria-controls="rulerEgg">
+            <span data-i18n="egg_trigger">* pourquoi 25 cm, et pas 23,5 ?</span>
+          </button>
+          <div class="ruler-egg" id="rulerEgg" hidden>
+            <div class="tape" aria-hidden="true">
+              <span class="tape-cursor"></span>
+              <span class="tape-flag">23,5 cm</span>
+            </div>
+            <p class="egg-text" data-i18n="egg_text">Un jour, un client a mesuré une de nos pizzas au mètre ruban de chantier&nbsp;: <strong>23,5 cm</strong>. C'était vrai. Nous, on vise les 25 &mdash; la pâte, elle, fait ce qu'elle veut. 📏</p>
+          </div>
+        </div>
+
         <div class="subtabs" id="pizzaSubtabs">
           <button class="subtab active" data-sub="tomate" data-i18n="sub_tomate">Base Tomate</button>
           <button class="subtab" data-sub="creme" data-i18n="sub_creme">Base Crème</button>
@@ -248,91 +262,90 @@
 
         <!-- Base tomate -->
         <div class="subpanel active" id="sub-tomate">
-          <div class="price-legend"><span data-i18n="legend_name">Nom &amp; garniture</span><span class="pl-sizes"><span>25 cm</span><span>33 cm</span></span></div>
           <div class="pizza-grid">
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Margherita</h3>
-                <div class="menu-item-prices"><span class="price">6€</span><span class="price">8€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">6€</span><span class="price" data-size="33 cm">8€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_margherita">Tomates, olives</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Reine</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_reine">Jambon, champignons, olives</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Calzone</h3>
-                <div class="menu-item-prices"><span class="price">8€</span><span class="price">12€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">8€</span><span class="price" data-size="33 cm">12€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_calzone">Jambon, œuf</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Royale</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_royale">Jambon, lardons, champignons, oignons, œuf</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Zola</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_zola">Chorizo, gorgonzola, œuf</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Napolitaine</h3>
-                <div class="menu-item-prices"><span class="price">8€</span><span class="price">12€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">8€</span><span class="price" data-size="33 cm">12€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_napolitaine">Anchois, câpres, olives, oignons, tomates fraîches</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Parmesan</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_parmesan">Jambon cru, parmesan, olives</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Carni</h3>
-                <div class="menu-item-prices"><span class="price">11€</span><span class="price">15€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">11€</span><span class="price" data-size="33 cm">15€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_carni">Jambon blanc, jambon cru, lardons, chorizo, viande hachée, merguez, viande kebab, poulet, oignons</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Végétarienne</h3>
-                <div class="menu-item-prices"><span class="price">8€</span><span class="price">12€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">8€</span><span class="price" data-size="33 cm">12€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_vegetarienne">Poivrons, oignons, champignons, câpres, olives</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Mexicaine</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_mexicaine">Chorizo, poivrons, oignons</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Barbecue</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_barbecue">Lardons, viande hachée, olives, oignons, sauce barbecue</p>
             </div>
 
             <div class="menu-item pizza-item pizza-star">
               <div class="star-badge" data-i18n="badge_speciale">⭐ La spéciale</div>
               <div class="menu-item-header"><h3 class="menu-item-name">Topo Gigio</h3>
-                <div class="menu-item-prices"><span class="price">10€</span><span class="price">14€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">10€</span><span class="price" data-size="33 cm">14€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_topogigio">Lardons, viande hachée, champignons, jambon Serano, fromage à burger</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Bolognaise</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_bolognaise">Viande hachée, pesto, oignons, œuf</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Orientale</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_orientale">Merguez, poivrons, olives, oignons</p>
             </div>
 
@@ -341,85 +354,84 @@
 
         <!-- Base crème -->
         <div class="subpanel" id="sub-creme">
-          <div class="price-legend"><span data-i18n="legend_name">Nom &amp; garniture</span><span class="pl-sizes"><span>25 cm</span><span>33 cm</span></span></div>
           <div class="pizza-grid">
 
             <div class="menu-item pizza-item pizza-star">
               <div class="star-badge" data-i18n="badge_44">🔥 4 viandes + 4 fromages</div>
               <div class="menu-item-header"><h3 class="menu-item-name">La 4/4</h3>
-                <div class="menu-item-prices"><span class="price">11€</span><span class="price">15€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">11€</span><span class="price" data-size="33 cm">15€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_quatre">Kebab, jambon cru, jambon blanc, poulet, 4 fromages</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Kebab</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_kebab">Viande kebab, poivrons, oignons, câpres, olives</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Tartiflette</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_tartiflette">Lardons, pommes de terre, reblochon, oignons</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Curry</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_curry">Poulet curry, poivrons, oignons, olives</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Raclette</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_raclette">Jambon, pommes de terre, fromage à raclette, oignons</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Nordique</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_nordique">Saumon fumé, oignons, câpres, olives</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Pesto</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_pesto">Poulet, fromage burrata, champignons, oignons</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Carbonara</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_carbonara">Lardons, œuf, parmesan</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">4 Fromages</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_4fromages">Mozzarella, chèvre, raclette, gorgonzola</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Chèvre-Miel</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_chevremiel">Fromage de chèvre, miel, noix</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Parisienne</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_parisienne">Jambon blanc, pommes de terre, camembert</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Burger</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_pburger">Viande hachée, chorizo, cheddar, cornichons, oignons, sauce burger</p>
             </div>
 
             <div class="menu-item pizza-item">
               <div class="menu-item-header"><h3 class="menu-item-name">Expresse</h3>
-                <div class="menu-item-prices"><span class="price">9€</span><span class="price">13€</span></div></div>
+                <div class="menu-item-prices"><span class="price" data-size="25 cm">9€</span><span class="price" data-size="33 cm">13€</span></div></div>
               <p class="menu-item-desc" data-i18n="d_expresse">Viande kebab, fromage burrata, pesto</p>
             </div>
 
@@ -868,6 +880,20 @@
         </figure>
 
       </div>
+      <!-- L'avis culte : autodérision -->
+      <figure class="fav-review">
+        <div class="fav-review-head">
+          <span class="fav-badge" data-i18n="fav_label">🏆 Notre avis préféré</span>
+          <span class="fav-stars" aria-hidden="true">★☆☆☆☆</span>
+        </div>
+        <blockquote class="fav-quote" data-i18n="fav_quote">« Je commande une pizza de 25 cm et j'ai une pizza de 23,5 cm… je suis une personne qui aime en avoir pour son argent, ce n'est pas le cas&nbsp;! »</blockquote>
+        <figcaption class="fav-author" data-i18n="fav_author">— Un avis Google, mètre ruban de chantier à la main. Véridique.</figcaption>
+        <div class="fav-reply">
+          <span class="fav-reply-tag" data-i18n="fav_reply_tag">Notre réponse</span>
+          <p data-i18n="fav_reply">Et vous savez quoi&nbsp;? C'était vrai. Depuis, on a acheté un mètre ruban nous aussi. La pâte, elle, n'en fait toujours qu'à sa tête. On vise les 25 cm, promis — et les 1,5 cm manquants, on les rattrape en fromage. 🧀</p>
+        </div>
+      </figure>
+
       <div class="reviews-cta">
         <a href="https://www.google.com/maps?cid=13958942453612972205" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="rev_all">Voir tous les avis sur Google</a>
       </div>
