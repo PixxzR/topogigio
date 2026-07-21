@@ -1,5 +1,5 @@
 /* ============================================
-   TOPO GIGIO - i18n (FR default, EN / ES / DE)
+   TOPO GIGIO - i18n (FR default, EN / ES / DE / IT)
    La version FR est dans le HTML (fallback + SEO).
    ============================================ */
 (function () {
@@ -230,6 +230,34 @@
       footer_rights: "Para llevar en Gémozac. Todos los derechos reservados."
     },
 
+    it: {
+      nav_resto: "Il Ristorante", nav_carte: "Il Menù", nav_horaires: "Orari", nav_trouver: "Dove siamo",
+      hero_tagline: "Pizze artigianali (base pomodoro e crema), hamburger gourmet,<br>kebab, tacos e molto altro. Da asporto, a Gémozac.",
+      hero_cta1: "Vedi il menù", hero_cta2: "Ordina", hero_badge: "Da asporto, 6 giorni su 7",
+      about_eyebrow: "Il Ristorante", about_title: "Benvenuti da <em>Topo Gigio</em>",
+      about_p1: "A Gémozac, Topo Gigio è la casa della <strong>vera pizza artigianale</strong>, con base pomodoro o crema, preparata sul posto, ricca e gustosa. Ma non solo: hamburger, kebab, tacos, panini XXL, insalate fresche, tapas e dolci fatti in casa.",
+      about_p2: "Tutto è fresco, preparato su ordinazione e da asporto. Dalla Margherita alla specialità <em>Topo Gigio</em>, ce n'è per tutti i gusti e tutti gli appetiti.",
+      about_f1: "Pizze da 25 e 33 cm", about_f2: "Vendita da asporto", about_f3: "Aperto 6 giorni su 7",
+      about_card_title: "In breve", about_l_cmd: "📞 Ordini", about_l_addr: "📍 Indirizzo", about_l_midi: "🕐 Pranzo", about_l_soir: "🌙 Sera",
+      about_l_ferme: "🚫 Chiuso", about_v_ferme: "Lun. + sab. e dom. a pranzo", about_l_pay: "💳 Pagamento", about_v_pay: "Carta, contactless, carta buoni pasto", about_cta: "Chiama per ordinare",
+      menu_eyebrow: "Il nostro menù", menu_title: "Il Menù Topo Gigio", menu_subtitle: "Tutto da asporto. Supplementi e salse in fondo alla pagina.",
+      tab_pizzas: "🍕 Pizze", tab_tacos: "🌯 Tacos", tab_burgers: "🍔 Hamburger", tab_sandwichs: "🥙 Panini", tab_paninis: "🥪 Panini caldi", tab_assiettes: "🍽️ Piatti e Tapas", tab_salades: "🥗 Insalate", tab_barquettes: "🍗 Snack e Patatine", tab_desserts: "🍰 Dolci", tab_enfant: "🧒 Menù Bambini",
+      pizza_note: "Tutte le nostre pizze sono disponibili da <strong>25 cm</strong> o <strong>33 cm</strong>. Scegli la base qui sotto", sub_tomate: "Base Pomodoro", sub_creme: "Base Crema", legend_name: "Nome e ingredienti", badge_speciale: "⭐ La specialità", badge_44: "🔥 4 carni + 4 formaggi",
+      d_margherita: "Pomodoro, olive", d_reine: "Prosciutto cotto, funghi, olive", d_calzone: "Prosciutto cotto, uovo", d_royale: "Prosciutto cotto, bacon, funghi, cipolle, uovo", d_zola: "Chorizo, gorgonzola, uovo", d_napolitaine: "Acciughe, capperi, olive, cipolle, pomodori freschi", d_parmesan: "Prosciutto crudo, parmigiano, olive", d_carni: "Prosciutto cotto, prosciutto crudo, bacon, chorizo, carne macinata, merguez, carne kebab, pollo, cipolle", d_vegetarienne: "Peperoni, cipolle, funghi, capperi, olive", d_mexicaine: "Chorizo, peperoni, cipolle", d_barbecue: "Bacon, carne macinata, olive, cipolle, salsa barbecue", d_topogigio: "Bacon, carne macinata, funghi, prosciutto crudo, formaggio per hamburger", d_bolognaise: "Carne macinata, pesto, cipolle, uovo", d_orientale: "Merguez, peperoni, olive, cipolle",
+      d_quatre: "Kebab, prosciutto crudo, prosciutto cotto, pollo, 4 formaggi", d_kebab: "Carne kebab, peperoni, cipolle, capperi, olive", d_tartiflette: "Bacon, patate, reblochon, cipolle", d_curry: "Pollo al curry, peperoni, cipolle, olive", d_raclette: "Prosciutto cotto, patate, raclette, cipolle", d_nordique: "Salmone affumicato, cipolle, capperi, olive", d_pesto: "Pollo, burrata, funghi, cipolle", d_carbonara: "Bacon, uovo, parmigiano", d_4fromages: "Mozzarella, formaggio di capra, raclette, gorgonzola", d_chevremiel: "Formaggio di capra, miele, noci", d_parisienne: "Prosciutto cotto, patate, camembert", d_pburger: "Carne macinata, chorizo, cheddar, cetriolini, cipolle, salsa burger", d_expresse: "Carne kebab, burrata, pesto", note_perso: "Componila tu: crea la tua pizza. Supplemento in base all'ingrediente, chiedici pure!",
+      tacos_note: "A scelta: Kebab, Pollo, Manzo, Tenders, Nuggets, Vegetariano, Cordon Bleu, Messicano «&nbsp;piccante&nbsp;» (pollo Tex-Mex + salsa samurai) o Chakchouka (kebab, peperoni, cipolle, uovo, pomodoro)", tacos_garn: "Ingredienti: insalata, pomodoro, cipolle, patatine, salsa cheddar. Supplemento caprino, raclette o cheddar: 2€.",
+      fc_simple: "Singolo", fc_double: "Doppio", fc_triple: "Triplo", fc_seul: "Solo", fc_frites: "+ Patatine", fc_boisson: "+ Bibita", fc_panini: "Il Panino", fc_enfant: "Menù Bambini",
+      burg_classiques: "I Classici", burg_classiques_sub: "Hamburger di manzo o di pollo", burg_speciaux: "Le Specialità", burg_speciaux_sub: "Manzo Rösti · Manzo Bacon · Manzo Raclette · Pollo Rösti · Pollo Caprino · Pollo Raclette",
+      sand_title: "Panini (pane o piadina)", sand_garn: "Ingredienti: insalata, pomodoro, cipolle.", sand_grands: "I Panini Grandi", tag_new: "Novità", sub_700: "circa 700 g", w_viandes: "Carni", d_sam: "Carne kebab + hamburger + cheddar + verdure crude, salsa a scelta", n_sam: "+ Patatine 13€ &nbsp;·&nbsp; + Bibita 14,5€", d_sam3: "Manzo + kebab + merguez + cheddar", n_sam3: "+ Patatine 15€ &nbsp;·&nbsp; + Bibita 17,5€ &nbsp;·&nbsp; Supplemento 1€", d_joe: "Kebab + manzo + pollo Tex-Mex + peperoni + cipolle + cheddar", n_joe: "+ Patatine 15€ &nbsp;·&nbsp; + Bibita 17,5€", d_duo: "Hamburger + pollo croccante + crème fraîche + emmental a fette + insalata", n_duo: "+ Patatine 13€ &nbsp;·&nbsp; + Bibita 14,5€", d_royal: "Merguez + hamburger + pollo croccante + uovo + raclette + salsa", n_royal: "+ Patatine 15€ &nbsp;·&nbsp; + Bibita 16,5€", d_crousty: "Riso cremoso + pollo fritto croccante e salsa (vaschetta)", n_crousty: "+ Bibita 10€",
+      pan_note: "Panino al formaggio a scelta: Salmone, Kebab, Pollo BBQ, Pollo al curry, Manzo o Prosciutto cotto", pan_supp: "Supplementi 2€: kebab, formaggio di capra, cheddar, uovo, bacon, cubetti di bacon, petto d'anatra affumicato, nuggets, pollo, merguez, reblochon, raclette, chorizo, roquefort, feta.",
+      ass_title: "I Piatti", i_ass1: "Piatto 1 Carne", d_ass1: "Carne kebab o hamburger + patatine + insalata", i_ass3: "Piatto 3 Carni", d_ass3: "Hamburger, kebab, merguez + patatine + insalata", ass_supp: "Carne extra 3€ &nbsp;·&nbsp; cheddar, uovo o formaggio di capra 2€.", tapas_title: "Le Tapas", tapas_list: "Calamari · Anelli di cipolla · Bastoncini di mozzarella · Bocconcini di formaggio · Mini involtini primavera · Bocconcini di camembert", i_barq_choix: "Vaschetta a scelta", d_tapas_unit: "Tapas al pezzo. Piccola 4€, Grande 6€", i_mixtapas: "Piatto Misto di Tapas", d_mixtapas: "Calamari, anelli di cipolla, bocconcini di formaggio, nuggets, alette di pollo, mini involtini primavera, con salse",
+      sal_note: "Insalata sola 6€ &nbsp;·&nbsp; + Patatine 8€ &nbsp;·&nbsp; + Bibita 9,5€", i_sal_saumon: "Insalata al Salmone", i_sal_poulet: "Insalata di Pollo", i_sal_thon: "Insalata al Tonno", i_sal_ital: "Insalata Italiana", d_sal_ital: "Prosciutto crudo + parmigiano", i_sal_verte: "Insalata Verde Semplice", d_sal_verte: "Insalata, pomodoro, cipolle",
+      barq_note: "Nuggets, tenders, alette di pollo, kebab e patatine, in vaschetta, da condividere!", pc3: "3 pz", pc4: "4 pz", pc6: "6 pz", pc9: "9 pz", pc12: "12 pz", size_p: "Piccola", size_g: "Grande", i_wings: "Alette di Pollo", i_frites: "Patatine", i_frites_cheddar: "Patatine al Cheddar",
+      i_gaufre: "Waffle", d_gaufre: "Nutella o zucchero", i_moelleux: "Tortino al Cioccolato", i_sundae: "Sundae Vaniglia e Caramello", enf_note: "A scelta: Hamburger + patatine · Nuggets + patatine · Carne kebab + patatine · Tacos di pollo + patatine", sauces_title: "Le nostre Salse <span class=\"item-sub\">la vaschetta 0,20€</span>", order_cta: "Pronto per ordinare?", new_label: "✨ Novità",
+      rev_eyebrow: "Recensioni", rev_title: "Amano Topo Gigio", rev_count: "248 recensioni Google", rev_all: "Vedi tutte le recensioni su Google", rev_src: "Recensione Google", hor_eyebrow: "Aperto 6 giorni su 7", hor_title: "Orari di apertura", hor_subtitle: "Chiuso il lunedì e il sabato e la domenica a pranzo", day_lun: "Lunedì", day_mar: "Martedì", day_mer: "Mercoledì", day_jeu: "Giovedì", day_ven: "Venerdì", day_sam: "Sabato", day_dim: "Domenica", closed: "Chiuso", midi_ferme: "(chiuso a pranzo)",
+      loc_subtitle: "17260 Gémozac, da asporto", loc_btn1: "Indicazioni", loc_btn2: "Chiama", contact_eyebrow: "Contatti", contact_title: "Ordina da asporto", contact_subtitle: "Ordina per telefono, noi prepariamo e tu ritiri.", c_phone: "Telefono", c_addr: "Indirizzo", c_hours_closed: "Chiuso lun. e nel weekend a pranzo", pay_title: "Metodi di pagamento accettati", pay_cash: "Contanti", pay_contactless: "Contactless", pay_debit: "Carta di debito", pay_trcard: "Carta buoni pasto", footer_rights: "Da asporto a Gémozac. Tutti i diritti riservati."
+    },
+
     de: {
       nav_resto: "Das Restaurant", nav_carte: "Speisekarte", nav_horaires: "Öffnungszeiten", nav_trouver: "Anfahrt",
       hero_tagline: "Hausgemachte Pizzen (Tomaten- &amp; Sahnebasis), Gourmet-Burger,<br>Kebabs, Tacos und vieles mehr. Zum Mitnehmen, in Gémozac.",
@@ -333,7 +361,7 @@
     }
   };
 
-  var SUPPORTED = ["fr", "en", "es", "de"];
+  var SUPPORTED = ["fr", "en", "es", "de", "it"];
   var STORE_KEY = "tg_lang";
 
   function pickInitial() {
