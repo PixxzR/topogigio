@@ -1,5 +1,5 @@
 /* ============================================
-   TOPO GIGIO - i18n (FR default, EN / ES / DE / IT)
+   TOPO GIGIO - i18n (FR default, EN / ES / DE / IT / SV)
    La version FR est dans le HTML (fallback + SEO).
    ============================================ */
 (function () {
@@ -258,6 +258,34 @@
       loc_subtitle: "17260 Gémozac, da asporto", loc_btn1: "Indicazioni", loc_btn2: "Chiama", contact_eyebrow: "Contatti", contact_title: "Ordina da asporto", contact_subtitle: "Ordina per telefono, noi prepariamo e tu ritiri.", c_phone: "Telefono", c_addr: "Indirizzo", c_hours_closed: "Chiuso lun. e nel weekend a pranzo", pay_title: "Metodi di pagamento accettati", pay_cash: "Contanti", pay_contactless: "Contactless", pay_debit: "Carta di debito", pay_trcard: "Carta buoni pasto", footer_rights: "Da asporto a Gémozac. Tutti i diritti riservati."
     },
 
+    sv: {
+      nav_resto: "Restaurangen", nav_carte: "Meny", nav_horaires: "Öppettider", nav_trouver: "Hitta hit",
+      hero_tagline: "Hantverksmässiga pizzor (tomat- eller crème fraîche-bas), gourmetburgare,<br>kebab, tacos och mycket mer. För avhämtning i Gémozac.",
+      hero_cta1: "Se menyn", hero_cta2: "Beställ", hero_badge: "Avhämtning, 6 dagar i veckan",
+      about_eyebrow: "Restaurangen", about_title: "Välkommen till <em>Topo Gigio</em>",
+      about_p1: "I Gémozac är Topo Gigio hemmet för <strong>äkta hantverkspizza</strong>, med tomat- eller crème fraîche-bas, tillagad på plats, generös och smakrik. Men inte bara det: burgare, kebab, tacos, XXL-smörgåsar, fräscha sallader, tapas och hemlagade desserter.",
+      about_p2: "Allt är färskt, lagas på beställning och är för avhämtning. Från Margherita till specialpizzan <em>Topo Gigio</em> finns något för alla smaker och aptiter.",
+      about_f1: "Pizzor 25 &amp; 33 cm", about_f2: "Avhämtning", about_f3: "Öppet 6 dagar i veckan",
+      about_card_title: "Snabböversikt", about_l_cmd: "📞 Beställning", about_l_addr: "📍 Adress", about_l_midi: "🕐 Lunch", about_l_soir: "🌙 Kväll",
+      about_l_ferme: "🚫 Stängt", about_v_ferme: "Mån. + lör. och sön. lunch", about_l_pay: "💳 Betalning", about_v_pay: "Kort, kontaktlöst, måltidskort", about_cta: "Ring och beställ",
+      menu_eyebrow: "Vår meny", menu_title: "Topo Gigios meny", menu_subtitle: "Allt är för avhämtning. Extra tillbehör och såser finns längst ner på sidan.",
+      tab_pizzas: "🍕 Pizzor", tab_tacos: "🌯 Tacos", tab_burgers: "🍔 Burgare", tab_sandwichs: "🥙 Smörgåsar", tab_paninis: "🥪 Panini", tab_assiettes: "🍽️ Tallrikar &amp; tapas", tab_salades: "🥗 Sallader", tab_barquettes: "🍗 Snacks &amp; pommes", tab_desserts: "🍰 Desserter", tab_enfant: "🧒 Barnmeny",
+      pizza_note: "Alla våra pizzor finns i <strong>25 cm</strong> eller <strong>33 cm</strong>. Välj bas nedan", sub_tomate: "Tomatbas", sub_creme: "Crème fraîche-bas", legend_name: "Namn &amp; ingredienser", badge_speciale: "⭐ Specialitet", badge_44: "🔥 4 kött + 4 ostar",
+      d_margherita: "Tomat, oliver", d_reine: "Skinka, champinjoner, oliver", d_calzone: "Skinka, ägg", d_royale: "Skinka, bacon, champinjoner, lök, ägg", d_zola: "Chorizo, gorgonzola, ägg", d_napolitaine: "Ansjovis, kapris, oliver, lök, färska tomater", d_parmesan: "Lufttorkad skinka, parmesan, oliver", d_carni: "Kokt skinka, lufttorkad skinka, bacon, chorizo, köttfärs, merguez, kebabkött, kyckling, lök", d_vegetarienne: "Paprika, lök, champinjoner, kapris, oliver", d_mexicaine: "Chorizo, paprika, lök", d_barbecue: "Bacon, köttfärs, oliver, lök, barbecuesås", d_topogigio: "Bacon, köttfärs, champinjoner, serranoskinka, hamburgerost", d_bolognaise: "Köttfärs, pesto, lök, ägg", d_orientale: "Merguez, paprika, oliver, lök",
+      d_quatre: "Kebab, lufttorkad skinka, kokt skinka, kyckling, 4 ostar", d_kebab: "Kebabkött, paprika, lök, kapris, oliver", d_tartiflette: "Bacon, potatis, reblochon, lök", d_curry: "Currykyckling, paprika, lök, oliver", d_raclette: "Skinka, potatis, racletteost, lök", d_nordique: "Rökt lax, lök, kapris, oliver", d_pesto: "Kyckling, burrata, champinjoner, lök", d_carbonara: "Bacon, ägg, parmesan", d_4fromages: "Mozzarella, getost, raclette, gorgonzola", d_chevremiel: "Getost, honung, valnötter", d_parisienne: "Kokt skinka, potatis, camembert", d_pburger: "Köttfärs, chorizo, cheddar, saltgurka, lök, hamburgersås", d_expresse: "Kebabkött, burrata, pesto", note_perso: "Komponera själv: skapa din egen pizza. Extra ingrediens prissätts styckvis, fråga oss!",
+      tacos_note: "Välj mellan: Kebab, Kyckling, Biff, Tenders, Nuggets, Vegetarisk, Cordon Bleu, Mexikansk «&nbsp;stark&nbsp;» (Tex-Mex-kyckling + samurajsås) eller Chakchouka (kebab, paprika, lök, ägg, tomater)", tacos_garn: "Tillbehör: sallad, tomater, lök, pommes, cheddarsås. Extra getost, raclette eller cheddar: 2€.",
+      fc_simple: "Enkel", fc_double: "Dubbel", fc_triple: "Trippel", fc_seul: "Utan tillbehör", fc_frites: "+ Pommes", fc_boisson: "+ Dryck", fc_panini: "Panini", fc_enfant: "Barnmeny",
+      burg_classiques: "Klassikerna", burg_classiques_sub: "Nötburgare eller kycklingburgare", burg_speciaux: "Specialarna", burg_speciaux_sub: "Nöt Rösti · Nöt Bacon · Nöt Raclette · Kyckling Rösti · Kyckling Getost · Kyckling Raclette",
+      sand_title: "Smörgåsar (bröd eller wrap)", sand_garn: "Tillbehör: sallad, tomater, lök.", sand_grands: "De stora smörgåsarna", tag_new: "Nyhet", sub_700: "ca 700 g", w_viandes: "Kött", d_sam: "Kebabkött + nötburgare + cheddar + råa grönsaker, valfri sås", n_sam: "+ Pommes 13€ &nbsp;·&nbsp; + Dryck 14,5€", d_sam3: "Biff + kebab + merguez + cheddar", n_sam3: "+ Pommes 15€ &nbsp;·&nbsp; + Dryck 17,5€ &nbsp;·&nbsp; Extra 1€", d_joe: "Kebab + biff + Tex-Mex-kyckling + paprika + lök + cheddar", n_joe: "+ Pommes 15€ &nbsp;·&nbsp; + Dryck 17,5€", d_duo: "Nötburgare + krispig kyckling + crème fraîche + skivad emmentaler + sallad", n_duo: "+ Pommes 13€ &nbsp;·&nbsp; + Dryck 14,5€", d_royal: "Merguez + nötburgare + krispig kyckling + ägg + raclette + sås", n_royal: "+ Pommes 15€ &nbsp;·&nbsp; + Dryck 16,5€", d_crousty: "Krämigt ris + krispig friterad kyckling och sås (låda)", n_crousty: "+ Dryck 10€",
+      pan_note: "Panini med ost, välj mellan: Lax, Kebab, BBQ-kyckling, Currykyckling, Biff eller Kokt skinka", pan_supp: "Extra 2€: kebab, getost, cheddar, ägg, bacon, bacontärningar, rökt ankbröst, nuggets, kyckling, merguez, reblochon, raclette, chorizo, roquefort, feta.",
+      ass_title: "Tallrikarna", i_ass1: "Tallrik med 1 kött", d_ass1: "Kebabkött eller nötburgare + pommes + sallad", i_ass3: "Tallrik med 3 kött", d_ass3: "Nötburgare, kebab, merguez + pommes + sallad", ass_supp: "Extra kött 3€ &nbsp;·&nbsp; cheddar, ägg eller getost 2€.", tapas_title: "Tapas", tapas_list: "Calamari · Lökringar · Mozzarellasticks · Ostbitar · Minivårrullar · Camembertbitar", i_barq_choix: "Valfri låda", d_tapas_unit: "Tapas styckvis. Liten 4€, Stor 6€", i_mixtapas: "Blandad tapastallrik", d_mixtapas: "Calamari, lökringar, ostbitar, nuggets, kycklingvingar, minivårrullar, med såser",
+      sal_note: "Sallad 6€ &nbsp;·&nbsp; + Pommes 8€ &nbsp;·&nbsp; + Dryck 9,5€", i_sal_saumon: "Laxsallad", i_sal_poulet: "Kycklingsallad", i_sal_thon: "Tonfisksallad", i_sal_ital: "Italiensk sallad", d_sal_ital: "Lufttorkad skinka + parmesan", i_sal_verte: "Enkel grönsallad", d_sal_verte: "Sallad, tomater, lök",
+      barq_note: "Nuggets, tenders, kycklingvingar, kebab och pommes i låda, perfekt att dela!", pc3: "3 st", pc4: "4 st", pc6: "6 st", pc9: "9 st", pc12: "12 st", size_p: "Liten", size_g: "Stor", i_wings: "Kycklingvingar", i_frites: "Pommes", i_frites_cheddar: "Pommes med cheddar",
+      i_gaufre: "Våffla", d_gaufre: "Nutella eller socker", i_moelleux: "Chokladfondant", i_sundae: "Vanilj- &amp; karamellsundae", enf_note: "Välj mellan: Burgare + pommes · Nuggets + pommes · Kebabkött + pommes · Kycklingtacos + pommes", sauces_title: "Våra såser <span class=\"item-sub\">burk 0,20€</span>", order_cta: "Redo att beställa?", new_label: "✨ Nyheter",
+      rev_eyebrow: "Kundrecensioner", rev_title: "De älskar Topo Gigio", rev_count: "248 Google-recensioner", rev_all: "Se alla recensioner på Google", rev_src: "Google-recension", hor_eyebrow: "Öppet 6 dagar i veckan", hor_title: "Öppettider", hor_subtitle: "Stängt på måndagar samt lördag och söndag lunch", day_lun: "Måndag", day_mar: "Tisdag", day_mer: "Onsdag", day_jeu: "Torsdag", day_ven: "Fredag", day_sam: "Lördag", day_dim: "Söndag", closed: "Stängt", midi_ferme: "(stängt vid lunch)",
+      loc_subtitle: "17260 Gémozac, avhämtning", loc_btn1: "Vägbeskrivning", loc_btn2: "Ring", contact_eyebrow: "Kontakt", contact_title: "Beställ för avhämtning", contact_subtitle: "Beställ per telefon, vi lagar maten och du hämtar den.", c_phone: "Telefon", c_addr: "Adress", c_hours_closed: "Stängt mån. och helgluncher", pay_title: "Godkända betalningssätt", pay_cash: "Kontanter", pay_contactless: "Kontaktlöst", pay_debit: "Betalkort", pay_trcard: "Måltidskort", footer_rights: "Avhämtning i Gémozac. Alla rättigheter förbehållna."
+    },
+
     de: {
       nav_resto: "Das Restaurant", nav_carte: "Speisekarte", nav_horaires: "Öffnungszeiten", nav_trouver: "Anfahrt",
       hero_tagline: "Hausgemachte Pizzen (Tomaten- &amp; Sahnebasis), Gourmet-Burger,<br>Kebabs, Tacos und vieles mehr. Zum Mitnehmen, in Gémozac.",
@@ -361,7 +389,7 @@
     }
   };
 
-  var SUPPORTED = ["fr", "en", "es", "de", "it"];
+  var SUPPORTED = ["fr", "en", "es", "de", "it", "sv"];
   var STORE_KEY = "tg_lang";
 
   function pickInitial() {
